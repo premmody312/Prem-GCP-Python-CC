@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/app.css')}}">
+    <title>SaveForSquareFoot</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <a href="#" class="navbar-brand">
+            <h3 class="mb-0">SaveForSquareFoot</h3>
+        </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#showcase" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#icons" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#explore" class="nav-link">Explore</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#newsletter" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-toggle="modal" data-target="#bookingModal">Book</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="showcase" class="d-flex justify-content-center align-items-center">
+        <div id="overlay"></div>
+        <div id="header" class="container text-white text-center">
+            <h3 class="display-5 mb-0">CREDIT LOANS</h3>
+            <h1 class="display-1">SaveForSquareFoot</h1>
+            <p class="lead d-none d-md-block">Providing Loans as a solution for all Life problems </p>
+            <button id="book" class="btn btn-lg btn-primary px-5" data-toggle="modal" data-target="#bookingModal">Verify you Eligibility NOW</button>
+        </div>
+    </section>
+
+   
+   
+    <div class="modal" id="bookingModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">New Loan Assessment</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Please fill out the form below and we'll get back to you as soon as possible</p>
+                    <form >
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" class="form-control" id="email" name ="email" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="adults">Number of Dependents</label>
+                            <select class="form-control" id="adults" name="adults">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="children">Years of Education</label>
+                            <select class="form-control" id="children" name="children">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="requests">Additional Requests</label>
+                            <textarea id="requests" rows="3" class="form-control" name="requests"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary">Submit Request</button>
+                    <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
